@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      button {
+        cursor: pointer;
+        margin: 0 20px;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mt-[200px] text-center">
+      <div class="bg-gray-200 p-6">
+        <input
+          type="text"
+          class="border border-black text-4xl rounded-lg"
+          id="display"
+          readonly
+        />
+        <div class="grid grid-cols-4 mx-[510px] mt-2 gap-2">
+          <button
+            class="bg-orange-300 p-6 rounded-4xl"
+            onclick="appendDisplay('+')"
+          >
+            +
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('7')"
+          >
+            7
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('8')"
+          >
+            8
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('9')"
+          >
+            9
+          </button>
+          <button
+            class="bg-orange-300 p-6 rounded-4xl"
+            onclick="appendDisplay('-')"
+          >
+            -
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('4')"
+          >
+            4
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('5')"
+          >
+            5
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('6')"
+          >
+            6
+          </button>
+          <button
+            class="bg-orange-300 p-6 rounded-4xl"
+            onclick="appendDisplay('*')"
+          >
+            *
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('1')"
+          >
+            1
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('2')"
+          >
+            2
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('3')"
+          >
+            3
+          </button>
+          <button
+            class="bg-orange-300 p-6 rounded-4xl"
+            onclick="appendDisplay('/')"
+          >
+            /
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('0')"
+          >
+            0
+          </button>
+          <button
+            class="bg-gray-300 p-6 rounded-4xl"
+            onclick="appendDisplay('.')"
+          >
+            .
+          </button>
+          <button class="bg-gray-300 p-6 rounded-4xl" onclick="result()">
+            =
+          </button>
+          <button
+            class="bg-orange-300 p-6 rounded-4xl"
+            onclick="clearDisplay()"
+          >
+            c
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

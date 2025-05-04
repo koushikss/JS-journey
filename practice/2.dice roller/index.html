@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-300">
+    <div class="p-10 text-center bg-white mx-[600px] mt-6 rounded">
+      <h1 class="font-bold text-lg mb-2">Dice generator</h1>
+      <button
+        onclick="diceRoller()"
+        class="bg-red-500 rounded p-4 cursor-pointer"
+      >
+        Roll
+      </button>
+      <div id="diceResult" class="w-[100px] h-[100px] mx-auto pt-6">
+        <!-- <img src="Images/1.svg" alt="" /> -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
